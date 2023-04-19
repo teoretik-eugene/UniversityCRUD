@@ -40,4 +40,7 @@
 			<artifactId>modelmapper</artifactId>
 			<version>2.4.5</version>
 		</dependency>
+		
+Полный pom.xml файл приведен в репозитории
+
 

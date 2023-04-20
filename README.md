@@ -7,7 +7,7 @@
 # Необходимые зависимости:
 
 Для запуска проекта необходима зависимость SpringBoot 2.7.10:
-
+```
   <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -31,16 +31,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-    
+    ```
 А также зависимость ModelMapper:
-
+```
   <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
 			<version>2.4.5</version>
 		</dependency>
-		
+		```
 Полный pom.xml файл приведен в репозитории
 
 
@@ -154,7 +154,7 @@ p.s Присутствуют файлы json сохрененные из Postman
 
 Отправим запрос ```Get http://localhost:8081/api/v1/faculty```
 
-В ответ мы получаем список наших объектов, содержащие в себе информацию об университете:
+В ответ мы получаем список наших объектов, содержащие в себе информацию о факультете и университете (заметим, что возвращается представление DTO, а не сама сущность из БД):
 ```
 [
     {

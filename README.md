@@ -143,8 +143,52 @@ p.s Присутствуют файлы json сохрененные из Postman
     "website": "https://open.mephi.ru/unit/5"
 }
 ```
-Если сущность с таким ID была найдена, то изменим ее в соответствии с указанным параметром. Иначе вернет 304 (NOT_MODIFIED).
+Если сущность с таким ID была найдена, то изменим ее в соответствии с указанным параметром. Значение поменяется прямо в БД. Иначе вернет 304 (NOT_MODIFIED).
+
+В репозитории присутствуют json файлы с запросами из Postman
 
 **Аналогично проведем с Faculty**
 
+Отправим запрос ```Get http://localhost:8081/api/v1/faculty```
 
+В ответ мы получаем список наших объектов, содержащие в себе информацию об университете:
+```
+[
+    {
+        "name": "IU",
+        "code": "11.03.03",
+        "gpa": 252.0,
+        "description": "Informatics and management system",
+        "university": {
+            "name": "BMSTU",
+            "address": "Moscow, 2nd Baumanskaya str., 5",
+            "foundation_year": 1830,
+            "website": "https://bmstu.ru/"
+        }
+    },
+    {
+        "name": "RT",
+        "code": "11.03.04",
+        "gpa": 207.0,
+        "description": "Radio engineering",
+        "university": {
+            "name": "BMSTU",
+            "address": "Moscow, 2nd Baumanskaya str., 5",
+            "foundation_year": 1830,
+            "website": "https://bmstu.ru/"
+        }
+    },
+    {
+        "name": "LaPlas",
+        "code": "12.03.05",
+        "gpa": 281.0,
+        "description": "Lasers and Plasma",
+        "university": {
+            "name": "MEPHI",
+            "address": "Kashirskoe sh., 31, Moscow",
+            "foundation_year": 1942,
+            "website": "https://open.mephi.ru/unit/5"
+        }
+    }
+]
+```

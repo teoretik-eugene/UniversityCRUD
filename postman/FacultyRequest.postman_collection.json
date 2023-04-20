@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "ed160fa9-6724-4cda-a9a3-d13ac176e414",
+		"name": "FacultyRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26720313"
+	},
+	"item": [
+		{
+			"name": "GetAllFaculty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/faculty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"faculty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/faculty/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"faculty",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostFaculty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"BoI\",\r\n        \"code\": \"38.03.05\",\r\n        \"gpa\": 114.2,\r\n        \"description\": \"Buisness Informatics\",\r\n        \"university\": \"RUDN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/faculty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"faculty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatchFaculty",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"name\": \"BI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/faculty/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"faculty",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

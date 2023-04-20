@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "389f4280-a734-4f7a-b643-e195b9bdb5ff",
+		"name": "UniversityRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26720313"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/university",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"university"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUniversityById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/university/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"university",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUniversity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"RUDN\",\r\n    \"address\": \"Miklukho-Maklaya str., 6, Moscow\",\r\n    \"foundation_year\": 1960,\r\n    \"website\": \"https://www.rudn.ru/\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/university",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"university"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatchUniversity",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"website\": \"https://open.mephi.ru/unit/5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/university/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"university",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

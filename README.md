@@ -72,4 +72,53 @@
 
 Для начала необходимо запустить init.sql, который в себе содержит запросы для создания таблицы и внесение в нее данных. Создадутся таблицы с данными, с которыми мы будет взаимодействовать посредством API, Http и JSON.
 
-** Описание эндпоинтов: **
+**Описание эндпоинтов:**
+p.s Присутствуют файлы json сохрененные из Postman
+
+Университет:
+
+```Get запрос на адрес http://localhost:8081/api/v1/university:```
+Получаем в ответ: 
+```
+[
+    {
+        "name": "BMSTU",
+        "address": "Moscow, 2nd Baumanskaya str., 5",
+        "foundation_year": 1830,
+        "website": "https://bmstu.ru/"
+    },
+    {
+        "name": "MEPHI",
+        "address": "Kashirskoe sh., 31, Moscow",
+        "foundation_year": 1942,
+        "website": "https://mephi.ru/"
+    },
+    {
+        "name": "MIPT",
+        "address": "Institutsky Lane, 9, Dolgoprudny",
+        "foundation_year": 1946,
+        "website": "https://mipt.ru/"
+    },
+    {
+        "name": "MIET",
+        "address": "Shokina Square, 1, Zelenograd, Moscow",
+        "foundation_year": 1965,
+        "website": "https://miet.ru/"
+    }
+]
+```
+Т.е. получили DTO всех добавленных университетов
+
+Получаем отдельный университет по id
+``Get запрос по id из БД на адрес: http://localhost:8081/api/v1/university/1```
+Получаем в ответ:
+```
+{
+    "name": "BMSTU",
+    "address": "Moscow, 2nd Baumanskaya str., 5",
+    "foundation_year": 1830,
+    "website": "https://bmstu.ru/"
+}
+```
+
+

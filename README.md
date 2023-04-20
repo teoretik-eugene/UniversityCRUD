@@ -192,3 +192,22 @@ p.s Присутствуют файлы json сохрененные из Postman
     }
 ]
 ```
+
+Отправляя запрос по конкретному ID получим описание в json факультета:
+
+``` Get http://localhost:8081/api/v1/faculty/1```:
+
+```
+{
+    "name": "IU",
+    "code": "11.03.03",
+    "gpa": 252.0,
+    "description": "Informatics and management system",
+    "university": {
+        "name": "BMSTU",
+        "address": "Moscow, 2nd Baumanskaya str., 5",
+        "foundation_year": 1830,
+        "website": "https://bmstu.ru/"
+    }
+}
+```

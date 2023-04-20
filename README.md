@@ -31,7 +31,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-    ```
+```
 А также зависимость ModelMapper:
 ```
   <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
@@ -40,7 +40,7 @@
 			<artifactId>modelmapper</artifactId>
 			<version>2.4.5</version>
 		</dependency>
-		```
+```
 Полный pom.xml файл приведен в репозитории
 
 
